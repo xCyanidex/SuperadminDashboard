@@ -7,7 +7,7 @@ import {Ecommerce,Orders,Calendar,Employees,Stacked, Pyramid,Customers,Kanban,Ar
 import "./App.css";
 
 function App() {
-  const activeMenu=false;
+  const activeMenu=true;
   return (
     <div>
       <BrowserRouter>
@@ -45,8 +45,8 @@ function App() {
           <div>
             <Routes>
               {/* {Dashboard} */}
-              <Route path="/" element="ECommerce" />
-              <Route path="/ecommerce" element="ECommerce" />
+              <Route path="/" element={<Ecommerce/>} />
+              <Route path="/ecommerce" element={<Ecommerce/>} />
 
               {/* Pages */}
               <Route path="/orders" element={<Orders/>} />
